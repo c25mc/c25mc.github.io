@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Domine&family=Playfair+Display&family=Slabo+27px&family=Yeseva+One&display=swap" rel="stylesheet">
+	<title>stars</title>
+<style type="text/css">
+	#stars{
+		height: 100px;
+		width: 100px;
+		background-image: url(https://t3.ftcdn.net/jpg/05/35/54/22/360_F_535542201_wC2oKP5h1IM21JyrxbKH0zSN7Hj6nB5o.jpg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		position: absolute;
+	}
+	h1{
+		font-size: 60px;
+		font-family: 'Domine', serif;
+		text-align: center;
+		color: darkturquoise;
+	}
+	body{
+		background-image: url(https://shepherdvillage.org/wp-content/uploads/2021/06/confetti-4.gif);
+
+	}
+</style>
+</head>
+<body>
+	<h1>Happy Birthday!!</h1>
+
+<div></div>
+<div id= "stars"></div>
+
+<script type="text/javascript">
+	
+document.addEventListener("click",function makeStar(event){
+
+
+	console.log(event.clientX);
+	console.log(event.clientY);
+
+stars.style.left = event.clientX - 50 + "px";
+stars.style.top = event.clientY - 50 + "px";
+
+})
+</script>
+
+
+
+</body>
+</html>
