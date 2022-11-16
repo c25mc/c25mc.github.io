@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="">
+	#box{
+	width: 100px;
+	height: 100px;
+	background-color: lightpink;
+}
+
+</style>
+
+</head>
+<body>
+<div id=box></div>
+<script type="text/javascript">
+	document.addEventListener("click", function (event){
+box.style.left= event.clientX+"px";
+
+box.style.top= event.clientY+ "px";
+
+})
+
+</script>
+</body>
+</html>
