@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		
+		div{
+			width: 200px;
+			height: 200px;
+			border: 2px solid lightblue;
+			display: inline-block;
+	
+		}
+	</style>
+</head>
+<body>
+	
+<div id="box1"></div>
+	
+<div id="box2"></div>
+
+<script type="text/javascript">
+
+	var mandarinWords = ["报纸", "处理", "案子", "有意思", "头发", "从来没有", "笑", "一定", "卷发", "好像", "奇怪"]
+	var meaning = ["newspaper", "to handle", "legal case", "interesting", "hair", "have never", "to laugh at", "surely", "curly hair", "to seem that", "to believe", "strange"]
+
+	function wait (){
+		box2.innerText = meaning[number]
+	}
+
+	var number;
+	document.addEventListener("click", function(){
+
+		number = Math.round(Math.random()*2);
+
+		box1.innerText = mandarinWords[number]
+
+		setTimeout(wait, 2500)
+	})
+
+</script>
+
+</body>
+</html>

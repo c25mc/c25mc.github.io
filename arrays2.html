@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title></title>
+
+<style type="text/css">
+	#box{
+		width: 500px;
+		height: 700px;
+		border: 2px solid black;
+		font-size: 50px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+
+	
+
+	}
+</style>
+</head>
+<body>
+	<center>
+		<h1> random snack generator:</h1>
+	</center>
+<center><div id= "box"></div></center>
+
+<script type="text/javascript">
+	var snacks= ["https://m.media-amazon.com/images/I/817AqBCjWRL.jpg", "http://images.kglobalservices.com/www.cheezit.ca_en/en_ca/product/product_601701/prod_img-820702_extra-toasty.png","https://m.media-amazon.com/images/I/81As7EJUNjL.jpg","https://www.yocrunch.com/wp-content/uploads/2017/09/m-and-ms-vanilla-lowfat-yogurt.png","https://images.heb.com/is/image/HEBGrocery/000403020?fit=constrain,1&wid=800&hei=800&fmt=jpg&qlt=85,0&resMode=sharp2&op_usm=1.75,0.3,2,0", "https://cdn.shopify.com/s/files/1/1154/8424/products/pirates-booty-popcorn.jpg?v=1568809262", "https://i5.peapod.com/c/PQ/PQT4V.jpg", "https://m.media-amazon.com/images/I/717RfUvxxNS.jpg", ]
+
+
+box.addEventListener("click", function(){
+
+var randomNumber =Math.round(Math.random()*6);
+
+	box.style.backgroundImage = "url("+snacks[randomNumber]+")"
+	;
+
+	console.log(randomNumber)
+})
+</script>
+</body>
+</html>

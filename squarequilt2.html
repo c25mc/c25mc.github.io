@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	.breakfast{
+		width: 100px;
+		height: 100px;
+		background-color: lightblue;
+		display: inline-block;
+		margin: 3px;
+		background-image: url(https://veenaazmanov.com/wp-content/uploads/2020/05/Homemade-Croissants-Recipe60.jpg);
+		background-size: contain;
+		background-repeat: no-repeat;
+</style>
+	<title></title>
+
+</head>
+<body>
+<script type="text/javascript">
+	
+	function makeCroissant(){
+	var croissant = document.createElement("div");
+	document.body.appendChild(croissant);
+	croissant.classList.add("breakfast");
+
+	croissant.addEventListener("click", function(){
+		croissant.style.backgroundImage= "url(https://www.harryanddavid.com/blog/wp-content/uploads/2022/05/origin-of-the-bagel-stack-of-bagels.jpg)"
+	})
+
+
+}
+
+for(var i=0; 1<1000;i=i+1)
+
+{makeCroissant(i)}
+</script>
+</body>
+</html>

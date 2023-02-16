@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+		
+		.squares{
+			width: 180px;
+			height: 180px;
+			background-color: blue;
+			margin: 2px;
+			display: inline-block;
+			color: white;
+		}
+		h1{
+			font-size: 50px;
+			text-align: center;
+
+		}
+	</style>
+</head>
+<body>
+
+<h1>January</h1>
+	
+
+
+	<script type="text/javascript">
+		
+		function makeSq (x){
+			var square = document.createElement("div");
+			var link = document.createElement('a')
+			document.body.appendChild(link)
+			link.appendChild(square)
+			link.href=x + ".html"
+			square.classList.add("squares")
+			// square.innerText = x;
+
+			if (x>=1 && x<7){
+				square.style.backgroundColor="white"
+			}
+		}
+
+		for (var i=1; i<38; i=i+1){
+			makeSq(i)
+		}
+
+
+
+
+	</script>
+
+</body>
+</html>
