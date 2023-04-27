@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style>
+		
+
+		#buggy{
+			width:200px;
+			height:120px;
+			background-color:blue;
+			left:10px;
+			position:absolute;
+			background-image: url(https://bikefriday.com/wp-content/uploads/2016/02/2015.family.clipped.WEB_.jpg);
+			background-size: cover;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="buggy"></div>
+
+	<script type="text/javascript">
+
+		buggy.style.left = "0px";
+		//starts in the top left corner 
+
+		 var x = parseInt(buggy.style.left);
+
+		document.addEventListener("keydown", function(event){
+			console.log(event.keyCode)
+
+			if(event.keyCode ==39){
+				x = x+10;
+				buggy.style.left = x +"px";
+			}
+
+			//listens for keyboard
+		
+			//placeholder equals itself plus ten so it moves over 10 px 
+
+			else if(event.keyCode ==37){
+				x = x-10;
+
+				buggy.style.left= x + "px";
+
+			}
+
+		})
+
+
+	</script>
+
+</body>
+</html>

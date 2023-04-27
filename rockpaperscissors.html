@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#box{
+			width: 500px;
+			height: 700px;
+			border: 2px solid black;
+			background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+
+
+		}
+		#box2{
+			width: 500px;
+			height: 700px;
+			border: 2px solid black;
+			background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		}
+
+		div{
+			display: inline-block;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>rock, paper, scissors:</h1>
+
+<center><div id="box">player 1</div>
+<div id="box2"> player 2</div></center>
+<script type="text/javascript">
+	var game= ["rockcartoon.jpg", "https://t4.ftcdn.net/jpg/00/92/96/21/360_F_92962107_3wLrir8coz7muEXtguyV6B2gJldJJlED.jpg", "https://spaces-cdn.clipsafari.com/cjmxyvazcajk4tahfy16076kzuv4",]
+
+
+	box.addEventListener("click", function(){
+
+var randomNumber =Math.round(Math.random()*2);
+
+	box.style.backgroundImage = "url("+game[randomNumber]+")"
+	;
+
+	console.log(randomNumber)
+})
+	box2.addEventListener("click", function(){
+
+var randomNumber =Math.round(Math.random()*2);
+
+	box2.style.backgroundImage = "url("+game[randomNumber]+")"
+	;
+
+	console.log(randomNumber)
+})
+
+</script>
+</body>
+</html>
